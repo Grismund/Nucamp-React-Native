@@ -1,22 +1,4 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
-
-class Home extends Component {
-
-    static navigationOptions = {
-        title: 'Home'
-    }
-
-    render() {
-        return (
-            <View>
-                <Text>Home Component</Text>
-            </View>
-        );
-    }
-}
-
-export default Home;import React, { Component } from 'react';
 import { View, Text, ScrollView } from 'react-native';
 import { Card } from 'react-native-elements';
 import { CAMPSITES } from '../shared/campsites';
@@ -24,7 +6,7 @@ import { PROMOTIONS } from '../shared/promotions';
 import { PARTNERS } from '../shared/partners';
 
 
-// USE THIS RENDERITEM FOR MY CATEGORIES FEATURE ON OPEN-ART.
+// USE this RenderItem function in OA Collections
 function RenderItem({item}) {
     if (item) {
         return (
@@ -58,9 +40,6 @@ class Home extends Component {
 
     render() {
         return (
-            // ScrollView vs. FlatList. ScrollView renders EVERYTHING into memory then slides up and down. 
-            // FlatList uses 'lazy loading' which only renders what is displayed, so it renders as the element
-            // comes into view, then wipes it from memory when it goes out of view.
             <ScrollView>
                 <RenderItem 
                     item={this.state.campsites.filter(campsite => campsite.featured)[0]}
