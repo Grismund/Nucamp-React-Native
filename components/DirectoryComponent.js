@@ -25,6 +25,7 @@ class Directory extends Component {
         const { navigate } = this.props.navigation;
         const renderDirectoryItem = ({item}) => {
             return (
+                //Use this to get a new card for each new object
                 <ListItem
                     title={item.name}
                     subtitle={item.description}
