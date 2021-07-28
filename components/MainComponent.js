@@ -25,6 +25,8 @@ const DirectoryNavigator = createStackNavigator(
                     type='font-awesome'
                     iconStyle={styles.stackIcon}
                     onPress={() => navigation.toggleDrawer()}
+                    // This below property can also work to replace the arrow function. Interesting.
+                    // onPress={navigation.toggleDrawer}
                 />
             })
         },
@@ -115,6 +117,8 @@ const ContactNavigator = createStackNavigator(
     }
 );
 
+// Why the arrow function here with props?
+// There is no local state, so why props? Where is it coming from and where is it going?
 const CustomDrawerContentComponent = props => (
     <ScrollView>
         <SafeAreaView 
