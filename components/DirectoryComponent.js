@@ -7,10 +7,10 @@ import { baseUrl } from '../shared/baseUrl';
 const mapStateToProps = state => {
     return {
         campsites: state.campsites,
-    };
-};
+    }
+}
 
-// class components are useful for adding a constructor to hold data in state.
+    // class components are useful for adding a constructor to hold data in state.
 class Directory extends Component {
 
 

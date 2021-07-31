@@ -7,8 +7,8 @@ import { baseUrl } from '../shared/baseUrl';
 const mapStateToProps = state => {
     return {
         partners: state.partners
-    };
-};
+    }
+}
 
 
 
@@ -27,7 +27,7 @@ class About extends Component {
                     leftAvatar={{source: {uri: baseUrl + item.image}}}
                 >                    
                 </ListItem>
-            )
+            );
         }
 
         return (
