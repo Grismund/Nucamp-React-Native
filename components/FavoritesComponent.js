@@ -118,6 +118,9 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontSize: 16,
         width: 100
+    },
+    swipeRow: {
+        backgroundColor: 'gold'
     }
 });
 

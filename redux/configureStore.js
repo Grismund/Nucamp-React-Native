@@ -17,13 +17,16 @@ const config = {
 
 export const ConfigureStore = () => {
     const store = createStore(
-        persistCombineReducers(config, {
+        persistCombineReducers(
+            config, 
+            {
             campsites,
             comments,
             partners,
             promotions,
             favorites
-        }),
+            }
+        ),
         applyMiddleware(thunk, logger)
     );
 
